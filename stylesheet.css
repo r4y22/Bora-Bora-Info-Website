@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+}
+
+p {
+    font-family: 'Kalam', cursive;
+}
+
+.nav {
+    display: inline-block;
+    margin: 0 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav a {
+    font-size: 1.2em;
+    font-family: 'Kalam', cursive;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav:hover {
+    color: #000;
+    text-decoration: none;
+    transform: scale(1.3);
+}
+
+.nav:hover a {
+    color: #000;
+}
+
+.nav.active a {
+    color: #000;
+    text-underline-position: below;
+    text-decoration: underline;
+    text-decoration-color: green;
+    text-decoration-thickness: 4px;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.welcome-text,
+.intro-text, 
+.large-text {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.welcome-text {
+    animation-delay: 0.5s;
+}
+
+.intro-text {
+    animation-delay: 1s;
+}
+
+.large-text {
+    animation-delay: 0.5s;
+}
+
+.home-image {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.show-image {
+    opacity: 1;
+}
+
+.large-text {
+    font-family: 'Kalam', cursive;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.bora-bora-video {
+    width: 100%;
+    max-width: 800px; 
+    display: block;
+    margin: 0 auto; 
+}
+
+.dream-vacation-box {
+    width: 80%; 
+    border: 10px solid #000000;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 30px auto; 
+    font-size: 1.2em; 
+}
+
+.dream-vacation-box h2 {
+    text-align: center;
+}
+
+.activities-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px;
+}
+.activity {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  
+}
+.activity img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+.activity h3 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.activity p {
+    font-size: 0.8em;
+    text-align: center;
+
+}
+
+.activity:hover img {
+    transform: scale(1.1);
+  }
+
+.plane-icon {
+    transition: all 0.3s ease;
+}
+
+.plane-icon:hover {
+    transform: translateY(-10px);
+}
+
+.medium-text {
+    font-family: 'Kalam', cursive;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.medium-text a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+.medium-text a:hover {
+    color: green;
+    border-bottom: 1px solid green;
+  }
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
